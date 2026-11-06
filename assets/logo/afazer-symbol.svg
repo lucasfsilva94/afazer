@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="aFazer">
+  <rect width="100" height="100" rx="24" fill="#0F766E"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 34l8 8 14-16"/>
+    <path d="M59 34h21"/>
+    <path d="M21 60h59"/>
+    <path d="M21 80h38"/>
+  </g>
+</svg>

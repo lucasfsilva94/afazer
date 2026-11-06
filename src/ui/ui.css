@@ -274,3 +274,9 @@ select.select { appearance: auto; }
 .more-btn{margin-top:var(--sp-3)}
 .sort-field{max-width:260px;margin-bottom:var(--sp-4)}
 .org-sec h3{margin-bottom:var(--sp-2)}
+
+/* Logo: duas imagens, a visível depende de [data-theme] (não de prefers-color-scheme) */
+.brand img{display:block;height:36px;width:auto}
+.brand .logo-dark{display:none}
+[data-theme="escuro"] .brand .logo-light{display:none}
+[data-theme="escuro"] .brand .logo-dark{display:block}

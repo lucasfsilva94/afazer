@@ -6,6 +6,9 @@ import { ThemeToggle } from '../theme/ThemeToggle'
 import { Icon, type IconName } from './Icon'
 import { Modal } from './Modal'
 import { openNewTask } from './actions'
+import logoLight from '../../assets/logo/afazer-logo.svg'
+import logoDark from '../../assets/logo/afazer-logo-dark.svg'
+import symbol from '../../assets/logo/afazer-symbol.svg'
 
 export interface NavItem {
   key: string // pasta em features/
@@ -25,17 +28,10 @@ export const NAV: NavItem[] = [
 const MAIN = NAV.slice(0, 4)
 const MORE = NAV.slice(4)
 
-const Logo = ({ size }: { size: number }) => (
-  <svg width={size} height={size} viewBox="0 0 32 32" aria-hidden="true">
-    <rect width="32" height="32" rx="9" fill="var(--accent)" />
-    <path d="M9 16.5l4.8 4.8L23 11.5" fill="none" stroke="var(--accent-fg)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-  </svg>
-)
-
 export function Layout() {
   const { pathname } = useLocation()
   const [moreOpen, setMoreOpen] = useState(false)
-  const title = NAV.find((n) => n.path === pathname)?.label ?? 'Afazer'
+  const title = NAV.find((n) => n.path === pathname)?.label ?? 'aFazer'
   const pending = useLiveQuery(() => db.tasks.filter((t) => !t.done).count(), [], 0)
   const h1 = useRef<HTMLHeadingElement>(null)
 
@@ -49,8 +45,8 @@ export function Layout() {
     <div className="app">
       <aside className="sidebar" aria-label="Navegação principal">
         <div className="brand">
-          <Logo size={32} />
-          <span>Afazer</span>
+          <img className="logo-light" src={logoLight} alt="aFazer" />
+          <img className="logo-dark" src={logoDark} alt="" />
         </div>
         <nav className="nav">
           {NAV.map((n) => (
@@ -67,7 +63,7 @@ export function Layout() {
       <div className="main">
         <header className="topbar">
           <div className="brand-mini" aria-hidden="true">
-            <Logo size={28} />
+            <img src={symbol} alt="" width={28} height={28} />
           </div>
           <h1 ref={h1} tabIndex={-1}>
             {title}

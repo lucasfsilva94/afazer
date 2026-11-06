@@ -1,0 +1,165 @@
+{
+  "workflow": "companion",
+  "specName": "Logo do aFazer",
+  "branch": "main",
+  "currentStep": "implement",
+  "status": "implementing",
+  "history": [
+    {
+      "step": "specify",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:18:43.023Z"
+    },
+    {
+      "step": "specify",
+      "substep": null,
+      "kind": "complete",
+      "by": "extension",
+      "at": "2026-11-06T02:19:59.438Z"
+    },
+    {
+      "step": "plan",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:23:42.239Z"
+    },
+    {
+      "step": "plan",
+      "substep": "research",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:24:34.663Z"
+    },
+    {
+      "step": "plan",
+      "substep": "design",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:24:35.252Z"
+    },
+    {
+      "step": "plan",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:24:37.559Z"
+    },
+    {
+      "step": "tasks",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:25:37.744Z"
+    },
+    {
+      "step": "tasks",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:32:35.000Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:32:51.525Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:34:25.551Z"
+    }
+  ],
+  "telemetryInstanceId": "656434e6-7584-443f-9f34-45f91c200a93",
+  "last_action": "17 tarefas concluidas; T015 (vitrine) pulada sem chave Gemini",
+  "coverage": {
+    "FR-001": {
+      "title": "Logo gerado com a skill logo-generator"
+    },
+    "FR-002": {
+      "title": "SVG do símbolo e SVG do logo completo"
+    },
+    "FR-003": {
+      "title": "Versão do logo para fundo escuro"
+    },
+    "FR-004": {
+      "title": "Cor principal igual à cor de destaque do app"
+    },
+    "FR-005": {
+      "title": "Nome nos arquivos finais independente de fonte instalada"
+    },
+    "FR-006": {
+      "title": "Símbolo reconhecível em 16 px"
+    },
+    "FR-007": {
+      "title": "Logo no cabeçalho, versão conforme o tema"
+    },
+    "FR-008": {
+      "title": "Símbolo como ícone da aba"
+    },
+    "FR-009": {
+      "title": "Texto alternativo aFazer no logo do cabeçalho"
+    },
+    "FR-010": {
+      "title": "PNGs do símbolo e do logo completo"
+    },
+    "FR-011": {
+      "title": "Logo no topo do README"
+    },
+    "FR-012": {
+      "title": "Grafia aFazer em todos os pontos"
+    }
+  },
+  "size": "normal",
+  "classification": {
+    "projectedFiles": 9,
+    "projectedTasks": 9,
+    "scopeSignal": "none",
+    "verdict": "normal"
+  },
+  "expectations": [
+    "Redesign visual do app além do logo",
+    "Mudança de nome do repositório ou pacote"
+  ],
+  "context": [
+    "constraint: skill logo-generator em .claude/skills/logo-generator",
+    "area: index.html e src/ui/Layout.tsx (cabeçalho e título)",
+    "area: src/theme/theme.css (cor de destaque)"
+  ],
+  "intent": "Criar o logo do aFazer com a skill logo-generator e aplicá-lo no app",
+  "assistant": "claude",
+  "decisions": [
+    {
+      "decision": "Originais em assets/logo, favicon copiado para public",
+      "why": "Spec pede fora de src; favicon precisa de URL fixa",
+      "rejected": "Tudo em public ou src/assets"
+    },
+    {
+      "decision": "Duas img alternadas por CSS data-theme",
+      "why": "Tema do app vem de data-theme, nao de prefers-color-scheme",
+      "rejected": "picture, SVG inline, estado React"
+    },
+    {
+      "decision": "Nome em curvas no SVG final",
+      "why": "FR-005 independe de fonte",
+      "rejected": "Fonte embutida em base64"
+    }
+  ],
+  "step_summaries": {
+    "plan": {
+      "summary": "Logo gerado pela skill em assets/logo e aplicado no Layout, favicon e README",
+      "key_finding": "O tema usa data-theme, entao a troca de logo e por CSS"
+    },
+    "tasks": {
+      "summary": "17 tarefas em 3 historias mais polish",
+      "key_finding": "US3 pode rodar em paralelo com US2 apos US1"
+    }
+  },
+  "approach": "Gerar SVGs/PNGs com a skill em assets/logo; Layout.tsx usa duas img alternadas por data-theme; favicon em public; README com logo."
+}
