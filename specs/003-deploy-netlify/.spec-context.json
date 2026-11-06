@@ -1,0 +1,107 @@
+{
+  "workflow": "companion",
+  "telemetryInstanceId": "77087c56-ce4d-4b08-94ba-62a51ecc058a",
+  "specName": "Deploy Netlify",
+  "branch": "main",
+  "selectedAt": "2026-11-06T02:22:02.380Z",
+  "currentStep": "implement",
+  "status": "implementing",
+  "history": [
+    {
+      "step": "specify",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:22:02.380Z"
+    },
+    {
+      "step": "specify",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:40:40.720Z"
+    },
+    {
+      "step": "plan",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:40:57.302Z"
+    },
+    {
+      "step": "plan",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:41:26.012Z"
+    },
+    {
+      "step": "tasks",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:41:52.411Z"
+    },
+    {
+      "step": "tasks",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:44:01.680Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:44:49.625Z"
+    }
+  ],
+  "assistant": "claude",
+  "coverage": {
+    "FR-001": {
+      "title": "Repo declares build and publish dir",
+      "tasks": [
+        "T001"
+      ]
+    },
+    "FR-002": {
+      "title": "Push to main deploys to production",
+      "tasks": [
+        "T003"
+      ]
+    },
+    "FR-003": {
+      "title": "Failed build does not replace published version",
+      "tasks": [
+        "T002",
+        "T006"
+      ]
+    },
+    "FR-004": {
+      "title": "Node version pinned in repo",
+      "tasks": [
+        "T001"
+      ]
+    },
+    "FR-005": {
+      "title": "Netlify MCP configured for Claude Code",
+      "tasks": [
+        "T004",
+        "T005"
+      ]
+    },
+    "FR-006": {
+      "title": "No Netlify token versioned",
+      "tasks": [
+        "T004",
+        "T006"
+      ]
+    }
+  },
+  "step_summaries": {
+    "tasks": {
+      "summary": "6 tarefas em 2 historias independentes mais polish"
+    }
+  }
+}
