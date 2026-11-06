@@ -3,3 +3,29 @@ dist
 *.tsbuildinfo
 __pycache__/
 .DS_Store
+
+# Ferramentas de agente e especificação
+.agents/
+.claude/
+.specify/
+.mcp.json
+skills-lock.json
+living-specs.yml
+.cursor/
+.windsurf/
+.codex/
+.gemini/
+.github/copilot-instructions.md
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+
+# Arquivos locais
+.env
+.env.*
+!.env.example
+*.log
+.vscode/
+.idea/
+Thumbs.db
+coverage/

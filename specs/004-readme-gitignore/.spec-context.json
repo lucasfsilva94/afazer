@@ -1,0 +1,205 @@
+{
+  "workflow": "companion",
+  "specName": "README e organização do repositório",
+  "branch": "main",
+  "currentStep": "implement",
+  "status": "completed",
+  "history": [
+    {
+      "step": "specify",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:49:25.261Z"
+    },
+    {
+      "step": "specify",
+      "substep": null,
+      "kind": "complete",
+      "by": "extension",
+      "at": "2026-11-06T02:51:12.060Z"
+    },
+    {
+      "step": "plan",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:51:12.621Z"
+    },
+    {
+      "step": "plan",
+      "substep": null,
+      "kind": "complete",
+      "by": "extension",
+      "at": "2026-11-06T02:51:13.242Z"
+    },
+    {
+      "step": "tasks",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:51:13.867Z"
+    },
+    {
+      "step": "tasks",
+      "substep": null,
+      "kind": "complete",
+      "by": "extension",
+      "at": "2026-11-06T02:51:14.458Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:51:54.843Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T001",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:52:40.480Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T002",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:52:41.104Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T003",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:52:41.702Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T004",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:52:52.731Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:52:52.939Z"
+    }
+  ],
+  "telemetryInstanceId": "062835fb-2976-4120-8b94-22e8058ee106",
+  "last_action": "T001-T004 done",
+  "coverage": {
+    "FR-001": {
+      "title": "README gerado com a skill create-readme"
+    },
+    "FR-002": {
+      "title": "README descreve app, tecnologias, instalar, rodar, testar, build e URL do deploy"
+    },
+    "FR-003": {
+      "title": "README mantem o logo no topo"
+    },
+    "FR-004": {
+      "title": ".gitignore ignora .agents, .claude e .specify"
+    },
+    "FR-005": {
+      "title": ".gitignore ignora ferramentas de agente na raiz e arquivos locais comuns"
+    },
+    "FR-006": {
+      "title": "Arquivos ja versionados saem do indice sem apagar do disco"
+    },
+    "FR-007": {
+      "title": ".gitignore nao ignora nada necessario ao app"
+    },
+    "FR-008": {
+      "title": "specs, tests, src, public, assets, netlify.toml e package-lock.json continuam versionados"
+    }
+  },
+  "size": "simple",
+  "classification": {
+    "projectedFiles": 3,
+    "projectedTasks": 4,
+    "scopeSignal": "none",
+    "verdict": "simple"
+  },
+  "expectations": [
+    "Nao reescrever o historico do Git",
+    "Nao mexer em .github/workflows"
+  ],
+  "context": [
+    "area: .gitignore e README.md na raiz",
+    "constraint: specs e codigo do app continuam versionados"
+  ],
+  "intent": "README completo e repositorio limpo de arquivos de ferramentas",
+  "approach": "Reescrever README com create-readme, ampliar .gitignore e tirar do indice o que ja subiu",
+  "assistant": "claude",
+  "currentTask": null,
+  "task_summaries": {
+    "T001": {
+      "status": "DONE",
+      "did": "gitignore ampliado",
+      "files": [
+        ".gitignore"
+      ]
+    },
+    "T002": {
+      "status": "DONE",
+      "did": "git rm --cached nos arquivos de ferramentas",
+      "files": [
+        ".agents",
+        ".claude",
+        ".specify",
+        "skills-lock.json",
+        "living-specs.yml",
+        ".mcp.json"
+      ]
+    },
+    "T003": {
+      "status": "DONE",
+      "did": "README reescrito seguindo create-readme",
+      "files": [
+        "README.md"
+      ]
+    },
+    "T004": {
+      "status": "DONE",
+      "did": "git ls-files, build e testes ok"
+    }
+  },
+  "verified": [
+    {
+      "what": "build",
+      "command": "npm run build",
+      "source": "derived",
+      "exitCode": 0,
+      "durationSeconds": 4.5,
+      "result": "\u001b[2mdist/\u001b[22m\u001b[35massets/index-BQrg0ygh.css  \u001b[39m\u001b[1m\u001b[2m 22.63 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   5.10 kB\u001b[22m · \u001b[2mdist/\u001b[22m\u001b[36massets/index-fgfgXmPn.js   \u001b[39m\u001b[1m\u001b[2m334.37 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 108.14 kB\u001b[22m · \u001b[32m✓ built in 1.10s\u001b[39m"
+    },
+    {
+      "what": "test",
+      "command": "npm test",
+      "source": "derived",
+      "exitCode": 0,
+      "durationSeconds": 4.6,
+      "result": "\u001b[90mstderr\u001b[2m | tests/perf/large-list.test.ts\u001b[2m > \u001b[22m\u001b[2mdesempenho com 500 tarefas (SC-004, SC-008)\u001b[2m > \u001b[22m\u001b[2ma lista renderiza só 50 linhas e oferece \"Mostrar mais\" (FR-027) · \u001b[22m\u001b[39m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. · ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    }
+  ],
+  "concerns": [
+    {
+      "note": "python3 ausente no PATH, usado py",
+      "step": "implement"
+    }
+  ],
+  "step_summaries": {
+    "implement": {
+      "summary": "README completo e .gitignore ampliado; ferramentas de agente fora do indice"
+    }
+  }
+}
