@@ -1,0 +1,1445 @@
+{
+  "workflow": "companion",
+  "specName": "Aplicativo de To-Do List Pessoal",
+  "branch": "main",
+  "currentStep": "implement",
+  "status": "completed",
+  "history": [
+    {
+      "step": "specify",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T00:56:26.501Z"
+    },
+    {
+      "step": "specify",
+      "substep": null,
+      "kind": "complete",
+      "by": "extension",
+      "at": "2026-11-06T01:04:23.700Z"
+    },
+    {
+      "step": "plan",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T01:08:00.869Z"
+    },
+    {
+      "step": "plan",
+      "substep": "research",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:10:06.277Z"
+    },
+    {
+      "step": "plan",
+      "substep": "design",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:10:38.835Z"
+    },
+    {
+      "step": "plan",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:10:41.056Z"
+    },
+    {
+      "step": "tasks",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T01:28:16.142Z"
+    },
+    {
+      "step": "tasks",
+      "substep": "generate",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:31:11.489Z"
+    },
+    {
+      "step": "tasks",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:31:12.147Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T01:38:08.828Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T001",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:40:56.967Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T002",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:40:57.591Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T003",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:40:58.168Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T004",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:53:54.733Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T005",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:53:55.337Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T006",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:53:55.897Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T007",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:53:56.498Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T008",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:53:57.079Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T009",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:53:57.706Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T010",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:53:58.306Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T011",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:53:58.907Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T012",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:53:59.526Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T013",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:54:00.153Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T014",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:55:36.086Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T015",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:55:36.721Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T016",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:57:49.308Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T017",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:57:49.899Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T018",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:58:49.003Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T019",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:58:50.210Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T020",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:58:50.817Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T021",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:58:51.426Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T022",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T01:58:52.036Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T023",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:01:35.958Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T024",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:01:36.522Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T025",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:01:37.132Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T026",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:01:37.710Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T027",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:01:38.369Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T028",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:01:38.955Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T029",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:01:39.540Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T030",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:01:40.133Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T031",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:01:40.748Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T032",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:03:28.421Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T033",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:03:29.173Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T034",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:03:29.807Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T035",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:03:30.423Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T036",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:03:31.030Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T037",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:03:31.627Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T038",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:03:32.219Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T039",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:05:52.325Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T040",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:05:52.939Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T041",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:05:53.556Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T042",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:05:54.205Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T043",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:05:54.906Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T044",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:05:55.527Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T045",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:05:56.121Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T046",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:05:56.767Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T047",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:05:57.413Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T048",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:08:26.795Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T049",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:08:27.390Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T050",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:08:28.012Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T051",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:08:28.629Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T052",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:08:29.261Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T053",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:08:29.855Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T054",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:08:30.501Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T055",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:08:31.162Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T056",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:10:20.895Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T057",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:10:22.349Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T058",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:10:22.935Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T059",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:10:23.546Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T060",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:10:24.143Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T061",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:10:24.744Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T062",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:10:25.367Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T063",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:14:05.421Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T064",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:14:06.048Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T065",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:14:06.780Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T066",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:14:07.390Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "task": "T067",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:14:31.202Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:14:31.993Z"
+    }
+  ],
+  "telemetryInstanceId": "61a2601a-b4ec-42aa-8a13-0c69b13356bf",
+  "last_action": "living specs evaluated — no capabilities matched",
+  "coverage": {
+    "FR-001": {
+      "title": "Criar tarefa informando ao menos um título",
+      "tasks": [
+        "T016",
+        "T017",
+        "T018"
+      ]
+    },
+    "FR-002": {
+      "title": "Impedir criação de tarefa sem título válido",
+      "tasks": [
+        "T016",
+        "T017",
+        "T018"
+      ]
+    },
+    "FR-003": {
+      "title": "Editar título e descrição de uma tarefa",
+      "tasks": [
+        "T016",
+        "T017",
+        "T020"
+      ]
+    },
+    "FR-004": {
+      "title": "Marcar e desmarcar tarefa como concluída",
+      "tasks": [
+        "T016",
+        "T017",
+        "T019"
+      ]
+    },
+    "FR-005": {
+      "title": "Excluir tarefa com confirmação",
+      "tasks": [
+        "T016",
+        "T017",
+        "T019"
+      ]
+    },
+    "FR-006": {
+      "title": "Persistir tarefas e atributos entre sessões",
+      "tasks": [
+        "T012",
+        "T016",
+        "T017"
+      ]
+    },
+    "FR-007": {
+      "title": "Definir prazo (data) e horário opcional",
+      "tasks": [
+        "T026",
+        "T028"
+      ]
+    },
+    "FR-008": {
+      "title": "Sinalizar tarefas atrasadas",
+      "tasks": [
+        "T023",
+        "T025",
+        "T029"
+      ]
+    },
+    "FR-009": {
+      "title": "Configurar lembretes e receber aviso",
+      "tasks": [
+        "T024",
+        "T026",
+        "T030",
+        "T031"
+      ]
+    },
+    "FR-010": {
+      "title": "Não disparar lembretes de tarefas concluídas/excluídas",
+      "tasks": [
+        "T024",
+        "T027"
+      ]
+    },
+    "FR-011": {
+      "title": "Atribuir nível de prioridade pré-definido",
+      "tasks": [
+        "T032",
+        "T035",
+        "T036"
+      ]
+    },
+    "FR-012": {
+      "title": "Organizar tarefas em categorias e etiquetas",
+      "tasks": [
+        "T033",
+        "T035",
+        "T036"
+      ]
+    },
+    "FR-013": {
+      "title": "Criar, renomear e excluir categorias, etiquetas e projetos",
+      "tasks": [
+        "T033",
+        "T038"
+      ]
+    },
+    "FR-014": {
+      "title": "Preservar tarefas ao excluir agrupamento em uso",
+      "tasks": [
+        "T032",
+        "T033",
+        "T038"
+      ]
+    },
+    "FR-015": {
+      "title": "Subtarefas refletindo progresso da tarefa",
+      "tasks": [
+        "T042",
+        "T043",
+        "T045",
+        "T046"
+      ]
+    },
+    "FR-016": {
+      "title": "Agrupar e visualizar tarefas por projeto",
+      "tasks": [
+        "T045",
+        "T047"
+      ]
+    },
+    "FR-017": {
+      "title": "Tarefas recorrentes gerando próxima ocorrência",
+      "tasks": [
+        "T039",
+        "T040",
+        "T041",
+        "T044"
+      ]
+    },
+    "FR-018": {
+      "title": "Painel com hoje, pendências, atrasadas e progresso",
+      "tasks": [
+        "T049",
+        "T050"
+      ]
+    },
+    "FR-019": {
+      "title": "Atualizar indicador de progresso do painel",
+      "tasks": [
+        "T048",
+        "T049",
+        "T050"
+      ]
+    },
+    "FR-020": {
+      "title": "Pesquisar tarefas por título e descrição",
+      "tasks": [
+        "T051",
+        "T052",
+        "T053"
+      ]
+    },
+    "FR-021": {
+      "title": "Filtrar tarefas de forma combinada e limpar filtros",
+      "tasks": [
+        "T051",
+        "T052",
+        "T054"
+      ]
+    },
+    "FR-022": {
+      "title": "Visão de calendário por data de prazo",
+      "tasks": [
+        "T055"
+      ]
+    },
+    "FR-023": {
+      "title": "Histórico de atividades em ordem cronológica",
+      "tasks": [
+        "T013",
+        "T057",
+        "T061"
+      ]
+    },
+    "FR-024": {
+      "title": "Estatísticas de produtividade",
+      "tasks": [
+        "T056",
+        "T059",
+        "T062"
+      ]
+    },
+    "FR-025": {
+      "title": "Modo claro/escuro com preferência persistente",
+      "tasks": [
+        "T003",
+        "T010",
+        "T058"
+      ]
+    },
+    "FR-026": {
+      "title": "Estados vazios explicativos",
+      "tasks": [
+        "T007",
+        "T021",
+        "T054"
+      ]
+    },
+    "FR-027": {
+      "title": "Responsividade com centenas de tarefas",
+      "tasks": [
+        "T021",
+        "T065"
+      ]
+    },
+    "FR-028": {
+      "title": "Captura rápida priorizando simplicidade",
+      "tasks": [
+        "T018",
+        "T020"
+      ]
+    }
+  },
+  "size": "oversized",
+  "classification": {
+    "projectedFiles": 36,
+    "projectedTasks": 48,
+    "scopeSignal": "larger",
+    "verdict": "oversized"
+  },
+  "expectations": [
+    "Sincronização entre dispositivos (fora da v1)",
+    "Contas, login ou uso multiusuário (fora da v1)",
+    "Notificações push do sistema operacional (consideradas em versões futuras)",
+    "Padrões de recorrência complexos, ex. 'a cada segunda terça-feira' (fora da v1)",
+    "Desfazer ações a partir do histórico de atividades (fora da v1)"
+  ],
+  "context": [
+    "constraint: priorizar simplicidade e facilidade de uso",
+    "constraint: uso pessoal de usuário único, armazenamento local na v1",
+    "reference: imagem de design anexada à solicitação como referência visual"
+  ],
+  "intent": "Aplicativo pessoal de to-do list simples e intuitivo para capturar, agendar, organizar, acompanhar e concluir tarefas",
+  "assistant": "claude",
+  "approach": "SPA Vite/React/TS sem backend. Dexie/IndexedDB como unica fonte de dados com consultas reativas; regras (recorrencia, atraso, progresso, estatisticas) em funcoes puras em src/domain. Escritas passam por repo.ts com registro de atividade na mesma transacao; lembretes in-app por agendador leve.",
+  "decisions": [
+    {
+      "decision": "SPA Vite+React+TS sem backend, IndexedDB via Dexie",
+      "why": "Dados locais de um usuario, indices para 500+ tarefas, liveQuery reativo entre abas",
+      "rejected": "localStorage e Electron/Tauri"
+    },
+    {
+      "decision": "Prazo como texto local YYYY-MM-DD + HH:mm",
+      "why": "Prazo e um dia do calendario, evita deslocamento de fuso",
+      "rejected": "timestamps UTC"
+    },
+    {
+      "decision": "Lembretes in-app com agendador de 15s e checagem ao ganhar foco",
+      "why": "Spec limita a avisos in-app e tolerancia de 1 min",
+      "rejected": "Notification API/Service Worker"
+    },
+    {
+      "decision": "Sem virtualizacao nem store global na v1",
+      "why": "500 linhas; o banco ja e a fonte da verdade",
+      "rejected": "react-window, Redux/Zustand"
+    }
+  ],
+  "step_summaries": {
+    "plan": {
+      "summary": "Plano de SPA local com Dexie, dominio em funcoes puras, entrega por historia US1..US7",
+      "key_finding": "Constituicao e modelo em branco e a imagem de design citada nao esta no repositorio"
+    },
+    "tasks": {
+      "summary": "67 tarefas em 10 fases, ondas por historia US1..US7, arquivos com dono unico via pontos de extensao"
+    }
+  },
+  "reviewComments": [
+    {
+      "id": "ref-1793927885973-0xvdl",
+      "doc": "research",
+      "anchor": {
+        "heading": "Referência visual",
+        "blockText": "A spec cita uma imagem de design anexada, mas ela não está no repositório. O plano não assume layout além do que a spec descreve. Colocar a imagem em `specs/001-todo-list/` antes da implementação para guiar os estilos.",
+        "line": 70
+      },
+      "comment": "Foi criado o prototipo da tela e está no diretorio \"specs/001-todo-list/prototipo.html\"",
+      "status": "applied",
+      "createdAt": "2026-11-06T01:18:05.975Z"
+    }
+  ],
+  "currentTask": null,
+  "task_summaries": {
+    "T001": {
+      "status": "DONE",
+      "did": "Vite+React+TS, Dexie, Vitest, tema inline no head",
+      "files": [
+        "package.json",
+        "vite.config.ts",
+        "tsconfig.json",
+        "index.html"
+      ]
+    },
+    "T002": {
+      "status": "DONE",
+      "did": "Tokens claro/escuro, base, reduced-motion",
+      "files": [
+        "src/theme/theme.css"
+      ]
+    },
+    "T003": {
+      "status": "DONE",
+      "did": "theme.ts e setup de testes com fake-indexeddb",
+      "files": [
+        "src/theme/theme.ts",
+        "tests/setup.ts"
+      ]
+    },
+    "T004": {
+      "status": "DONE",
+      "did": "Tipos",
+      "files": [
+        "src/db/types.ts"
+      ]
+    },
+    "T005": {
+      "status": "DONE",
+      "did": "Registro de ganchos",
+      "files": [
+        "src/db/hooks.ts"
+      ]
+    },
+    "T006": {
+      "status": "DONE",
+      "did": "Utilitários de data",
+      "files": [
+        "src/domain/dates.ts"
+      ]
+    },
+    "T007": {
+      "status": "DONE",
+      "did": "Button, EmptyState, Toast",
+      "files": [
+        "src/ui/Button.tsx",
+        "src/ui/EmptyState.tsx",
+        "src/ui/Toast.tsx"
+      ]
+    },
+    "T008": {
+      "status": "DONE",
+      "did": "ConfirmDialog e NameDialog (+Modal)",
+      "files": [
+        "src/ui/ConfirmDialog.tsx",
+        "src/ui/NameDialog.tsx",
+        "src/ui/Modal.tsx"
+      ]
+    },
+    "T009": {
+      "status": "DONE",
+      "did": "Chip e ProgressRing",
+      "files": [
+        "src/ui/Chip.tsx",
+        "src/ui/ProgressRing.tsx"
+      ]
+    },
+    "T010": {
+      "status": "DONE",
+      "did": "ThemeToggle",
+      "files": [
+        "src/theme/ThemeToggle.tsx"
+      ]
+    },
+    "T011": {
+      "status": "DONE",
+      "did": "Pipeline de visão",
+      "files": [
+        "src/domain/view.ts"
+      ]
+    },
+    "T012": {
+      "status": "DONE",
+      "did": "Schema Dexie",
+      "files": [
+        "src/db/schema.ts"
+      ]
+    },
+    "T013": {
+      "status": "DONE",
+      "did": "Repositório base, tx, atividade, ganchos",
+      "files": [
+        "src/db/repo.ts"
+      ]
+    },
+    "T014": {
+      "status": "DONE",
+      "did": "Layout: sidebar 248px, bottomnav 5 itens, folha Mais, cabeçalho com tema",
+      "files": [
+        "src/ui/Layout.tsx",
+        "src/ui/ui.css",
+        "src/ui/actions.ts"
+      ]
+    },
+    "T015": {
+      "status": "DONE",
+      "did": "main/App/routes com HashRouter e carga por glob",
+      "files": [
+        "src/main.tsx",
+        "src/App.tsx",
+        "src/routes.tsx"
+      ]
+    },
+    "T016": {
+      "status": "DONE",
+      "did": "7 testes de US1 (título, atividade, edição, concluir, excluir, persistência)",
+      "files": [
+        "tests/features/us1-tasks.test.ts"
+      ]
+    },
+    "T017": {
+      "status": "DONE",
+      "did": "createTask/updateTask/setDone/deleteTask com ganchos e StaleEditError",
+      "files": [
+        "src/db/tasks.ts"
+      ]
+    },
+    "T018": {
+      "status": "DONE",
+      "did": "QuickAdd com erro inline",
+      "files": [
+        "src/features/tasks/QuickAdd.tsx"
+      ]
+    },
+    "T019": {
+      "status": "DONE",
+      "did": "TaskRow com toggle/editar/excluir e carga de chips",
+      "files": [
+        "src/features/tasks/TaskRow.tsx"
+      ]
+    },
+    "T020": {
+      "status": "DONE",
+      "did": "TaskDialog + Provider, seções com carga eager",
+      "files": [
+        "src/features/tasks/TaskDialog.tsx",
+        "src/features/tasks/Provider.tsx",
+        "src/features/tasks/extension-types.ts"
+      ]
+    },
+    "T021": {
+      "status": "DONE",
+      "did": "TaskList com liveQuery, view, concluídas, vazio, mostrar mais",
+      "files": [
+        "src/features/tasks/TaskList.tsx"
+      ]
+    },
+    "T022": {
+      "status": "DONE",
+      "did": "Tela /tarefas",
+      "files": [
+        "src/features/tasks/Page.tsx"
+      ]
+    },
+    "T023": {
+      "status": "DONE",
+      "did": "5 testes de isOverdue",
+      "files": [
+        "tests/domain/status.test.ts"
+      ]
+    },
+    "T024": {
+      "status": "DONE",
+      "did": "8 testes de lembretes e prazo",
+      "files": [
+        "tests/features/us2-schedule.test.ts"
+      ]
+    },
+    "T025": {
+      "status": "DONE",
+      "did": "isOverdue",
+      "files": [
+        "src/domain/status.ts"
+      ]
+    },
+    "T026": {
+      "status": "DONE",
+      "did": "setDue/setReminder/clearReminder/getReminder",
+      "files": [
+        "src/db/schedule.ts"
+      ]
+    },
+    "T027": {
+      "status": "DONE",
+      "did": "Ganchos de lembrete (salvar/concluir/excluir)",
+      "files": [
+        "src/db/extensions/reminders.ts"
+      ]
+    },
+    "T028": {
+      "status": "DONE",
+      "did": "Seção de prazo, horário e lembrete",
+      "files": [
+        "src/features/tasks/sections/DueSection.tsx"
+      ]
+    },
+    "T029": {
+      "status": "DONE",
+      "did": "Chip de prazo e atraso com ícone e texto (+useNow)",
+      "files": [
+        "src/features/tasks/chips/DueChip.tsx",
+        "src/ui/useNow.ts"
+      ]
+    },
+    "T030": {
+      "status": "DONE",
+      "did": "Agendador 15s + foco",
+      "files": [
+        "src/features/reminders/scheduler.ts"
+      ]
+    },
+    "T031": {
+      "status": "DONE",
+      "did": "Provider do agendador com toast fixo",
+      "files": [
+        "src/features/reminders/Provider.tsx"
+      ]
+    },
+    "T032": {
+      "status": "DONE",
+      "did": "4 testes de prioridade, nomes únicos, desassociação",
+      "files": [
+        "tests/features/us3-organize.test.ts"
+      ]
+    },
+    "T033": {
+      "status": "DONE",
+      "did": "CRUD de grupos, deleteGroup, useGroups",
+      "files": [
+        "src/db/groups.ts"
+      ]
+    },
+    "T034": {
+      "status": "DONE",
+      "did": "Passo de ordenação",
+      "files": [
+        "src/domain/view/sort.ts"
+      ]
+    },
+    "T035": {
+      "status": "DONE",
+      "did": "Seção prioridade/categoria/etiquetas",
+      "files": [
+        "src/features/tasks/sections/OrganizeSection.tsx"
+      ]
+    },
+    "T036": {
+      "status": "DONE",
+      "did": "Chips de prioridade/categoria/etiquetas",
+      "files": [
+        "src/features/tasks/chips/OrganizeChips.tsx"
+      ]
+    },
+    "T037": {
+      "status": "DONE",
+      "did": "Seletor de ordenação",
+      "files": [
+        "src/features/tasks/toolbar/SortSelect.tsx"
+      ]
+    },
+    "T038": {
+      "status": "DONE",
+      "did": "ManageGroups com aviso da contagem",
+      "files": [
+        "src/features/projects/ManageGroups.tsx"
+      ]
+    },
+    "T039": {
+      "status": "DONE",
+      "did": "7 testes de nextOccurrence",
+      "files": [
+        "tests/domain/recurrence.test.ts"
+      ]
+    },
+    "T040": {
+      "status": "DONE",
+      "did": "9 testes de estrutura/recorrência",
+      "files": [
+        "tests/features/us4-structure.test.ts"
+      ]
+    },
+    "T041": {
+      "status": "DONE",
+      "did": "nextOccurrence com base fixa e notBefore",
+      "files": [
+        "src/domain/recurrence.ts"
+      ]
+    },
+    "T042": {
+      "status": "DONE",
+      "did": "subtaskProgress",
+      "files": [
+        "src/domain/progress.ts"
+      ]
+    },
+    "T043": {
+      "status": "DONE",
+      "did": "CRUD de subtarefas e saveSubtasks",
+      "files": [
+        "src/db/structure.ts"
+      ]
+    },
+    "T044": {
+      "status": "DONE",
+      "did": "Ganchos de recorrência e subtarefas",
+      "files": [
+        "src/db/extensions/recurrence.ts",
+        "src/db/extensions/subtasks.ts"
+      ]
+    },
+    "T045": {
+      "status": "DONE",
+      "did": "Seção projeto/recorrência/subtarefas",
+      "files": [
+        "src/features/tasks/sections/StructureSection.tsx"
+      ]
+    },
+    "T046": {
+      "status": "DONE",
+      "did": "Chips de progresso, projeto e recorrência",
+      "files": [
+        "src/features/tasks/chips/ProgressChip.tsx"
+      ]
+    },
+    "T047": {
+      "status": "DONE",
+      "did": "Tela /projetos",
+      "files": [
+        "src/features/projects/Page.tsx"
+      ]
+    },
+    "T048": {
+      "status": "DONE",
+      "did": "7 testes de agrupamento e progresso do dia",
+      "files": [
+        "tests/domain/dashboard.test.ts"
+      ]
+    },
+    "T049": {
+      "status": "DONE",
+      "did": "groupForDashboard e todayProgress",
+      "files": [
+        "src/domain/dashboard.ts"
+      ]
+    },
+    "T050": {
+      "status": "DONE",
+      "did": "Painel /",
+      "files": [
+        "src/features/dashboard/Page.tsx"
+      ]
+    },
+    "T051": {
+      "status": "DONE",
+      "did": "8 testes de busca/filtros + 500 tarefas <1s",
+      "files": [
+        "tests/domain/filters.test.ts"
+      ]
+    },
+    "T052": {
+      "status": "DONE",
+      "did": "Passo de visão com busca e filtros",
+      "files": [
+        "src/domain/view/filter.ts"
+      ]
+    },
+    "T053": {
+      "status": "DONE",
+      "did": "Campo de pesquisa",
+      "files": [
+        "src/features/tasks/toolbar/SearchBar.tsx"
+      ]
+    },
+    "T054": {
+      "status": "DONE",
+      "did": "Filtros, limpar, contagem",
+      "files": [
+        "src/features/tasks/toolbar/FilterBar.tsx"
+      ]
+    },
+    "T055": {
+      "status": "DONE",
+      "did": "Calendário mensal",
+      "files": [
+        "src/features/calendar/Page.tsx"
+      ]
+    },
+    "T056": {
+      "status": "DONE",
+      "did": "6 testes de estatísticas",
+      "files": [
+        "tests/domain/stats.test.ts"
+      ]
+    },
+    "T057": {
+      "status": "DONE",
+      "did": "3 testes de histórico",
+      "files": [
+        "tests/features/us7-history.test.ts"
+      ]
+    },
+    "T058": {
+      "status": "DONE",
+      "did": "5 testes de tema (inclui botão)",
+      "files": [
+        "tests/features/theme.test.ts"
+      ]
+    },
+    "T059": {
+      "status": "DONE",
+      "did": "completedPerDay/Week, completionRate",
+      "files": [
+        "src/domain/stats.ts"
+      ]
+    },
+    "T060": {
+      "status": "DONE",
+      "did": "BarChart SVG",
+      "files": [
+        "src/ui/BarChart.tsx"
+      ]
+    },
+    "T061": {
+      "status": "DONE",
+      "did": "Tela /historico",
+      "files": [
+        "src/features/history/Page.tsx"
+      ]
+    },
+    "T062": {
+      "status": "DONE",
+      "did": "Tela /estatisticas",
+      "files": [
+        "src/features/stats/Page.tsx"
+      ]
+    },
+    "T063": {
+      "status": "DONE",
+      "did": "Contraste testado nos tokens (corrigida borda de campo), alvos 44px, atraso/concluída também em texto no calendário",
+      "files": [
+        "src/theme/theme.css",
+        "src/ui/ui.css",
+        "tests/domain/contrast.test.ts"
+      ]
+    },
+    "T064": {
+      "status": "DONE",
+      "did": "Breakpoints do ui.css conferidos contra o protótipo; sem conferência visual (extensão do Chrome desconectada)",
+      "files": [
+        "src/ui/Layout.tsx"
+      ]
+    },
+    "T065": {
+      "status": "DONE",
+      "did": "4 testes com 500 tarefas: busca, calendário, painel, lista paginada",
+      "files": [
+        "tests/perf/large-list.test.ts"
+      ]
+    },
+    "T066": {
+      "status": "DONE",
+      "did": "Pendências decididas e registradas na seção 11 do design-spec",
+      "files": [
+        "specs/001-todo-list/design-spec.md"
+      ]
+    },
+    "T067": {
+      "status": "DONE",
+      "did": "104 testes, typecheck e build passando; lint inexistente; SC-001..008 revisados",
+      "files": [
+        "package.json"
+      ]
+    }
+  },
+  "verified": [
+    {
+      "what": "Testes (vitest)",
+      "command": "npm test",
+      "source": "derived",
+      "exitCode": 0,
+      "durationSeconds": 5.3,
+      "result": "\u001b[90mstderr\u001b[2m | tests/perf/large-list.test.ts\u001b[2m > \u001b[22m\u001b[2mdesempenho com 500 tarefas (SC-004, SC-008)\u001b[2m > \u001b[22m\u001b[2ma lista renderiza só 50 linhas e oferece \"Mostrar mais\" (FR-027) · \u001b[22m\u001b[39m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. · ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath."
+    },
+    {
+      "what": "Typecheck (tsc)",
+      "command": "npm run typecheck",
+      "source": "derived",
+      "exitCode": 0,
+      "durationSeconds": 2.9,
+      "result": "> afazer@0.1.0 typecheck · > tsc --noEmit"
+    },
+    {
+      "what": "Build (vite)",
+      "command": "npm run build",
+      "source": "derived",
+      "exitCode": 0,
+      "durationSeconds": 4.5,
+      "result": "\u001b[2mdist/\u001b[22m\u001b[35massets/index-C-oIBA36.css  \u001b[39m\u001b[1m\u001b[2m 22.46 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip:   5.06 kB\u001b[22m · \u001b[2mdist/\u001b[22m\u001b[36massets/index-CAjPWObP.js   \u001b[39m\u001b[1m\u001b[2m332.26 kB\u001b[22m\u001b[1m\u001b[22m\u001b[2m │ gzip: 107.75 kB\u001b[22m · \u001b[32m✓ built in 1.11s\u001b[39m"
+    }
+  ],
+  "concerns": [
+    {
+      "note": "Sem script de lint no package.json: lint não executado."
+    },
+    {
+      "note": "T064 sem conferência visual: extensão do Chrome desconectada; só breakpoints do CSS comparados ao protótipo."
+    },
+    {
+      "note": "Concluir, reabrir e concluir de novo uma tarefa recorrente cria uma segunda próxima ocorrência."
+    },
+    {
+      "note": "Aviso 'Recorrência encerrada' do design-spec não foi implementado."
+    },
+    {
+      "note": "SC-006 (teste de usabilidade) e SC-008 (rolagem fluida em navegador real) não foram medidos; SC-001..005 e SC-007 têm cobertura por teste ou por construção."
+    }
+  ]
+}

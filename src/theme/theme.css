@@ -1,0 +1,51 @@
+/* Tokens e base. Claro e escuro definidos separadamente (design-spec, seção 3). */
+:root {
+  --font: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  --font-display: "Segoe UI Variable Display", "Avenir Next", "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px; --sp-6: 32px; --sp-7: 48px;
+  --r-sm: 6px; --r-md: 10px; --r-lg: 14px;
+  --t-fast: 150ms; --t-med: 250ms;
+  --ease-out: cubic-bezier(.2, .7, .2, 1);
+  --sidebar-w: 248px;
+}
+:root, [data-theme="claro"] {
+  color-scheme: light;
+  --bg: #F3F6F6; --surface: #FFFFFF; --surface-2: #F7F9F9; --line: #DDE4E3; --line-strong: #7F908C;
+  --text: #14201F; --muted: #51615E;
+  --accent: #0F766E; --accent-hover: #0B5F58; --accent-fg: #FFFFFF; --accent-soft: #DDF1EE; --accent-text: #0B5F58;
+  --danger: #B42318; --danger-soft: #FDECEA; --danger-btn: #B42318; --danger-btn-fg: #FFFFFF;
+  --warn-soft: #FFF0D6; --warn-text: #85470A;
+  --shadow: 0 1px 2px rgba(16, 32, 30, .06), 0 4px 16px rgba(16, 32, 30, .06);
+  --scrim: rgba(8, 16, 15, .5);
+}
+[data-theme="escuro"] {
+  color-scheme: dark;
+  --bg: #0D1413; --surface: #152120; --surface-2: #1A2928; --line: #27393A; --line-strong: #6E8682;
+  --text: #E7EFED; --muted: #9FB4AF;
+  --accent: #3CC4B4; --accent-hover: #5FD6C8; --accent-fg: #04201C; --accent-soft: #163532; --accent-text: #74E0D2;
+  --danger: #FF8F80; --danger-soft: #33191A; --danger-btn: #FF8F80; --danger-btn-fg: #2A0A06;
+  --warn-soft: #3A2A12; --warn-text: #F5B96A;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .4), 0 6px 20px rgba(0, 0, 0, .3);
+  --scrim: rgba(0, 0, 0, .65);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: var(--font); font-size: 16px; line-height: 1.5; color: var(--text); background: var(--bg); }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.25; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+ul { list-style: none; margin: 0; padding: 0; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: var(--r-sm); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.muted { color: var(--muted); }
+[hidden] { display: none !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

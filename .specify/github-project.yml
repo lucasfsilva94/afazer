@@ -1,0 +1,16 @@
+# Integração com GitHub Issues + Projects (lida por .specify/scripts/bash/gh-project-sync.sh).
+# Uma issue por tarefa de tasks.md, com título "T###: descrição". O card da issue
+# acompanha a tarefa: Backlog -> In progress (começou) -> Done (fechada).
+repo: lucasfsilva94/todo-poc
+owner: lucasfsilva94
+project: 1
+# https://github.com/users/lucasfsilva94/projects/1/views/1
+
+# Nomes das opções do campo "Status" do Project (como aparecem no quadro).
+status_field: Status
+status_backlog: Backlog
+status_in_progress: In progress
+status_done: Done
+
+# Ao mover para Done, fecha também a issue (reason: completed).
+close_on_done: true
