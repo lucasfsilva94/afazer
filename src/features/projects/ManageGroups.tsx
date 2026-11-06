@@ -29,11 +29,12 @@ function GroupSection({
 }) {
   const groups = useGroups(kind)
   const { one, many } = KIND_LABEL[kind]
+  const [novo, nenhum] = one.endsWith('a') ? ['Nova', 'Nenhuma'] : ['Novo', 'Nenhum']
   return (
     <section className="org-sec">
       <h3>{many}</h3>
       <ul className="org-list">
-        {groups.length === 0 && <li className="muted">Nenhum {one} ainda.</li>}
+        {groups.length === 0 && <li className="muted">{nenhum} {one} ainda.</li>}
         {groups.map((g) => {
           const n = usage.get(`${kind}:${g.id}`) ?? 0
           return (
@@ -52,7 +53,7 @@ function GroupSection({
       </ul>
       <Button data-testid={`group-add-${kind}`} onClick={onCreate}>
         <Icon name="plus" />
-        Novo {one}
+        {novo} {one}
       </Button>
     </section>
   )

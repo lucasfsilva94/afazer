@@ -7,6 +7,10 @@
   --t-fast: 150ms; --t-med: 250ms;
   --ease-out: cubic-bezier(.2, .7, .2, 1);
   --sidebar-w: 248px;
+  --badge-h: 0px; /* faixa reservada ao selo Powered by Netlify (só em produção, no celular) */
+}
+@media (max-width: 899px) and (min-height: 481px) {
+  html[data-badge] { --badge-h: 56px; }
 }
 :root, [data-theme="claro"] {
   color-scheme: light;

@@ -104,7 +104,7 @@ export default function CalendarPage() {
 
       <section className="card" aria-labelledby="cal-day-h">
         <div className="sec-head">
-          <h2 id="cal-day-h" style={{ textTransform: 'capitalize' }}>
+          <h2 id="cal-day-h" className="cap-first">
             {fmtLong(selected)}
           </h2>
         </div>

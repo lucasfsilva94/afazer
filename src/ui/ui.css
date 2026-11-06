@@ -8,16 +8,16 @@
 /* ============ App shell ============ */
 .app{min-height:100dvh}
 .sidebar{display:none}
-.main{min-width:0;padding-bottom:calc(80px + env(safe-area-inset-bottom))}
+.main{min-width:0;padding-bottom:calc(80px + var(--badge-h) + env(safe-area-inset-bottom))}
 .topbar{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:var(--sp-3);padding:var(--sp-3) var(--sp-4);background:var(--bg);border-bottom:1px solid var(--line)}
 .topbar h1{font-size:24px;flex:1;min-width:0;outline:none}
 .brand-mini{display:flex;align-items:center;gap:var(--sp-2);font-family:var(--font-display);font-weight:700;font-size:18px}
 .content{padding:var(--sp-4);max-width:1200px;margin:0 auto}
-.bottomnav{position:fixed;inset:auto 0 0 0;z-index:6;display:grid;grid-template-columns:repeat(5,1fr);background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
-.bottomnav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;background:none;border:0;color:var(--muted);font-size:13px;font-weight:600;transition:color var(--t-fast)}
-.bottomnav a .od-icon{--od-icon-size:24px}
-.bottomnav a[aria-current="page"]{color:var(--accent-text)}
-.bottomnav a[aria-current="page"] .nav-ind{background:var(--accent-soft)}
+.bottomnav{position:fixed;inset:auto 0 0 0;z-index:6;display:grid;grid-template-columns:repeat(5,1fr);background:var(--surface);border-top:1px solid var(--line);padding-bottom:calc(var(--badge-h) + env(safe-area-inset-bottom))}
+.bottomnav a,.bottomnav button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;background:none;border:0;color:var(--muted);font-size:13px;font-weight:600;transition:color var(--t-fast)}
+.bottomnav a .od-icon,.bottomnav button .od-icon{--od-icon-size:24px}
+.bottomnav a[aria-current="page"],.bottomnav button[aria-current="page"]{color:var(--accent-text)}
+.bottomnav [aria-current="page"] .nav-ind{background:var(--accent-soft)}
 .nav-ind{display:flex;align-items:center;justify-content:center;width:56px;height:30px;border-radius:15px;transition:background var(--t-fast)}
 
 @media (min-width:900px){
@@ -67,8 +67,9 @@
 
 /* ============ Cards, headings ============ */
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:var(--sp-4)}
-.sec-head{display:flex;align-items:center;gap:var(--sp-2);margin:var(--sp-5) 0 var(--sp-3)}
-.sec-head:first-child{margin-top:0}
+.sec-head{display:flex;align-items:center;gap:var(--sp-2);margin:0 0 var(--sp-3)}
+/* Espaço entre blocos vem do bloco anterior, não do título (antes o :first-child zerava todos). */
+.content section+section,.capture+section{margin-top:var(--sp-5)}
 .sec-head h2{font-size:18px;flex:1}
 .count{padding:1px 10px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line);font-size:14px;font-weight:600;color:var(--muted)}
 .count.over{background:var(--danger-soft);color:var(--danger);border-color:transparent}
@@ -149,8 +150,10 @@
 .cal-wrap{display:grid;gap:var(--sp-4)}
 @media (min-width:1100px){.cal-wrap{grid-template-columns:minmax(0,1fr) 340px;align-items:start}}
 .cal-head{display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-3)}
-.cal-head h2{flex:1;font-size:20px;text-transform:capitalize}
+.cal-head h2{flex:1;font-size:20px}
+.cap-first::first-letter,.cal-head h2::first-letter{text-transform:uppercase}
 .cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+@media (max-width:419px){.cal-grid{gap:2px}} /* células de 44 px de largura em 360 px */
 .cal-dow{font-size:13px;font-weight:700;color:var(--muted);text-align:center;padding:4px 0}
 .cal-cell{display:flex;flex-direction:column;align-items:stretch;gap:2px;min-height:56px;padding:4px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);text-align:left;overflow:hidden;transition:border-color var(--t-fast),background var(--t-fast)}
 .cal-cell.out{background:var(--surface-2);color:var(--muted)}
@@ -208,7 +211,7 @@
 .chart .lbl-now{fill:var(--text);font-weight:700}
 
 /* ============ Dialogs ============ */
-dialog.dlg{border:0;padding:0;margin:auto;width:calc(100% - 24px);max-width:600px;max-height:calc(100dvh - 32px);border-radius:var(--r-lg);background:var(--surface);color:var(--text);box-shadow:0 24px 64px rgba(0,0,0,.35)}
+dialog.dlg{border:0;padding:0;margin:auto;width:calc(100% - 24px);max-width:600px;max-height:calc(100dvh - 32px - var(--badge-h));border-radius:var(--r-lg);background:var(--surface);color:var(--text);box-shadow:0 24px 64px rgba(0,0,0,.35)}
 dialog.dlg[open]{display:flex;flex-direction:column;animation:dlgin var(--t-med) var(--ease-out)}
 dialog.dlg::backdrop{background:var(--scrim)}
 dialog.sm{max-width:440px}
@@ -236,7 +239,7 @@ dialog.sm{max-width:440px}
 .sub-add{display:flex;gap:var(--sp-2)}
 .sub-add .input{flex:1;min-width:0}
 @media (max-width:639px){
-  dialog.dlg{margin:auto 0 0;width:100%;max-width:100%;max-height:92dvh;border-radius:var(--r-lg) var(--r-lg) 0 0}
+  dialog.dlg{margin:auto 0 0;width:100%;max-width:100%;max-height:calc(92dvh - var(--badge-h));padding-bottom:var(--badge-h);border-radius:var(--r-lg) var(--r-lg) 0 0}
   dialog.dlg.sm{margin:auto 12px;width:calc(100% - 24px);border-radius:var(--r-lg)}
   .dlg-body{padding-inline:var(--sp-4)}
   .dlg-head{padding-left:var(--sp-4)}
@@ -248,7 +251,7 @@ dialog.sm{max-width:440px}
 .more-menu .od-icon{--od-icon-size:20px}
 
 /* ============ Toasts ============ */
-.toasts{position:fixed;z-index:20;left:var(--sp-3);right:var(--sp-3);bottom:calc(80px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:var(--sp-2);align-items:center;pointer-events:none}
+.toasts{position:fixed;z-index:20;left:var(--sp-3);right:var(--sp-3);bottom:calc(80px + var(--badge-h) + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:var(--sp-2);align-items:center;pointer-events:none}
 @media (min-width:900px){.toasts{left:auto;right:var(--sp-5);bottom:var(--sp-5);align-items:flex-end}}
 .toast{pointer-events:auto;display:flex;align-items:center;gap:var(--sp-3);width:min(100%,420px);padding:var(--sp-3) var(--sp-2) var(--sp-3) var(--sp-4);background:var(--text);color:var(--bg);border-radius:var(--r-md);box-shadow:var(--shadow);animation:tin var(--t-med) var(--ease-out)}
 .toast.out{opacity:0;transform:translateY(8px);transition:opacity 160ms ease-in,transform 160ms ease-in}

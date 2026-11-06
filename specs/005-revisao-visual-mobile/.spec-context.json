@@ -1,0 +1,148 @@
+{
+  "workflow": "companion",
+  "specName": "Revisão visual e menu mobile sem sobreposição",
+  "branch": "main",
+  "currentStep": "implement",
+  "status": "implementing",
+  "history": [
+    {
+      "step": "specify",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:54:54.433Z"
+    },
+    {
+      "step": "specify",
+      "substep": null,
+      "kind": "complete",
+      "by": "extension",
+      "at": "2026-11-06T02:56:07.387Z"
+    },
+    {
+      "step": "plan",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:56:10.795Z"
+    },
+    {
+      "step": "plan",
+      "substep": "research",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:57:16.371Z"
+    },
+    {
+      "step": "plan",
+      "substep": "design",
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:57:16.926Z"
+    },
+    {
+      "step": "plan",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:57:18.738Z"
+    },
+    {
+      "step": "tasks",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T02:58:34.771Z"
+    },
+    {
+      "step": "tasks",
+      "substep": null,
+      "kind": "complete",
+      "by": "ai",
+      "at": "2026-11-06T02:59:00.026Z"
+    },
+    {
+      "step": "implement",
+      "substep": null,
+      "kind": "start",
+      "by": "extension",
+      "at": "2026-11-06T03:00:03.172Z"
+    }
+  ],
+  "telemetryInstanceId": "7736c943-2cf6-49b9-b26d-1810b2e3d799",
+  "last_action": "tasks.md generated (15 tasks, 5 phases)",
+  "coverage": {
+    "FR-001": {
+      "title": "Revisão conduzida com a skill impeccable e registrada"
+    },
+    "FR-002": {
+      "title": "Menu inferior do celular visível e tocável com o selo presente"
+    },
+    "FR-003": {
+      "title": "Selo Powered by Netlify não é removido nem alterado"
+    },
+    "FR-004": {
+      "title": "Conteúdo rola até o fim sem ficar atrás do menu ou do selo"
+    },
+    "FR-005": {
+      "title": "Escala única de espaçamento entre campo, títulos e cartões"
+    },
+    "FR-006": {
+      "title": "Margens e tamanhos consistentes entre telas e entre desktop e celular"
+    },
+    "FR-007": {
+      "title": "Sem rolagem horizontal nem texto cortado em 360 px"
+    },
+    "FR-008": {
+      "title": "Alvos de toque de pelo menos 44 px no celular"
+    },
+    "FR-009": {
+      "title": "Contraste adequado nos temas claro e escuro"
+    },
+    "FR-010": {
+      "title": "Sem vão no menu quando o selo não existe"
+    },
+    "FR-011": {
+      "title": "Funcionalidades existentes inalteradas"
+    }
+  },
+  "size": "normal",
+  "classification": {
+    "projectedFiles": 8,
+    "projectedTasks": 12,
+    "scopeSignal": "none",
+    "verdict": "normal"
+  },
+  "expectations": [
+    "Remover ou esconder o selo do Netlify",
+    "Mudar tema, cores ou logo",
+    "Mudar funcionalidades ou dados"
+  ],
+  "context": [
+    "area: src/ui/Layout.tsx (menu inferior .bottomnav)",
+    "area: src/ui/ui.css e src/theme/theme.css (tokens de espaçamento)",
+    "constraint: skill impeccable obrigatória",
+    "constraint: selo Powered by Netlify não pode ser removido"
+  ],
+  "intent": "Revisar visual com impeccable e impedir que o selo do Netlify cubra o menu mobile",
+  "assistant": "claude",
+  "decisions": [
+    {
+      "decision": "Reservar --badge-h como padding do .bottomnav em produção",
+      "why": "Sem vão e sem sobreposição, selo intocado",
+      "rejected": "Subir o menu com bottom; medir o selo por MutationObserver"
+    },
+    {
+      "decision": "Corrigir títulos colados trocando .sec-head:first-child por espaço entre seções",
+      "why": "A regra zerava a margem de todo título de seção",
+      "rejected": "Padding por página"
+    }
+  ],
+  "step_summaries": {
+    "plan": {
+      "summary": "Plano de CSS com token --badge-h e revisão impeccable registrada em review.md",
+      "key_finding": ".sec-head:first-child{margin-top:0} cola todos os títulos de seção"
+    }
+  },
+  "approach": "Token CSS --badge-h ligado por data-badge no html em produção reserva a faixa do selo dentro do menu inferior. Revisão impeccable nas seis telas gera review.md e ajustes em ui.css."
+}
